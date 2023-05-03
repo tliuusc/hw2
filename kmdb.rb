@@ -82,6 +82,7 @@ Role.destroy_all
 # rails generate model Role
 # updated files in db/migrate for table schema
 # rails db:migrate
+# need to rerun migrate each time a workspace is opened
 
 # Insert data into the database that reflects the sample data shown above.
 # Do not use hard-coded foreign key IDs.
