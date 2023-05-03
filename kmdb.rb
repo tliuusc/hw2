@@ -149,9 +149,9 @@ actor["name"] = "Anne Hathaway"
 actor.save
 
 # Role data
-batman1 = Movie.find_by({ "name" => "Batman Begins" })
-batman2 = Movie.find_by({ "name" => "The Dark Knight" })
-batman3 = Movie.find_by({ "name" => "The Dark Knight Rises" })
+batman1 = Movie.find_by({ "title" => "Batman Begins" })
+batman2 = Movie.find_by({ "title" => "The Dark Knight" })
+batman3 = Movie.find_by({ "title" => "The Dark Knight Rises" })
 actor1 = Actor.find_by({ "name" => "Christian Bale" })
 actor2 = Actor.find_by({ "name" => "Michael Caine" })
 actor3 = Actor.find_by({ "name" => "Liam Neeson" })
@@ -190,43 +190,53 @@ role["actor_id"] = actor5["id"]
 role["character_name"] = "Commissioner Gordon"
 role.save
 
+role = Role.new
 role["movie_id"] = batman2["id"]
 role["actor_id"] = actor1["id"]
 role["character_name"] = "Bruce Wayne"
 role.save
+role = Role.new
 role["movie_id"] = batman2["id"]
 role["actor_id"] = actor6["id"]
 role["character_name"] = "Joker"
 role.save
+role = Role.new
 role["movie_id"] = batman2["id"]
 role["actor_id"] = actor7["id"]
 role["character_name"] = "Harvey Dent"
 role.save
+role = Role.new
 role["movie_id"] = batman2["id"]
 role["actor_id"] = actor2["id"]
 role["character_name"] = "Alfred"
 role.save
+role = Role.new
 role["movie_id"] = batman2["id"]
 role["actor_id"] = actor8["id"]
 role["character_name"] = "Rachel Dawes"
 role.save
 
+role = Role.new
 role["movie_id"] = batman3["id"]
 role["actor_id"] = actor1["id"]
 role["character_name"] = "Bruce Wayne"
 role.save
+role = Role.new
 role["movie_id"] = batman3["id"]
 role["actor_id"] = actor5["id"]
 role["character_name"] = "Commissioner Gordon"
 role.save
+role = Role.new
 role["movie_id"] = batman3["id"]
 role["actor_id"] = actor9["id"]
 role["character_name"] = "Bane"
 role.save
+role = Role.new
 role["movie_id"] = batman3["id"]
 role["actor_id"] = actor10["id"]
 role["character_name"] = "John Blake"
 role.save
+role = Role.new
 role["movie_id"] = batman3["id"]
 role["actor_id"] = actor11["id"]
 role["character_name"] = "Selina Kyle"
